@@ -1,0 +1,72 @@
+<!DOCTYP html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in world news</title>
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <p class="pp">Welcome to the <strong><u>world News website</u>.</strong> To continue browsing the site, please (Log in) </p>
+    <div class="bot">   
+        <button id="login">Log in</button>
+    </div>
+    <section class="popup">
+        
+        <div class="login">
+            <div class="login_form">
+                <div class="choice">
+                    <div id="mn" class="ex">&times;</div>
+                    <p id="log" onclick="activechoice(id)">login</p>
+                    <hr>
+                    <p id="reg" onclick="activechoice(id)">regist</p>
+                    
+                </div>
+                <div id="first"> 
+                    <form action="HTML/Home.html" target="_self">
+                    <div class="input1">
+                        <label for="email"><i class="fa fa-user"></i></label>
+                        <input id="email" type="email" placeholder="enter your email" >
+                    </div>
+                    <div class="input2">
+                        <label for="password"><i class="fa fa-unlock-alt"></i></label>
+                        <input id="password" type="password" placeholder="enter your password">
+                    </div>
+                    <input id="submit"  type="submit" value="send">
+                    </form>
+                </div>
+                <div id="second">
+                    <form action="HTML/about.html" target="_blank">
+                        <div class="input3">
+                            <label for="f-name">first name</label>
+                            <input id="f-name" type="text" placeholder="enter your first name">
+                        </div>
+                            <div class="input4">
+                            <label for="l-name">last name</label>
+                            <input id="l-name" type="text" placeholder="enter your last name">
+                        </div>
+                        <div class="input5">
+                            <label for="p-NO">age</label>
+                            <input id="p-NO" type="number" placeholder="enter your age">
+                        </div>
+                        <div class="input6">
+                            <label for="u-email">email</label>
+                            <input id="u-email" type="email" placeholder="make an valid email">
+                        </div>
+                        <div class="input 7">
+                            <label for="u-password">password</label>
+                            <input id="u-password" type="password" placeholder="contain symbols,uppercase,number">
+                        </div>
+                        <input id="send" type="submit" value="save">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <p id="demo" class="po"></p>
+    <script src="js/login.js"></script>
+</body>
+</html>
